@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Event - Eventera</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+      <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/events.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="../img/logo.jpeg" alt="">
+                </div>
+                <span>Eventera</span>
+            </div>
+            <div class="bx bx-menu" id="menu-icons"></div>
+            <ul class="nav-links">
+                <li><a href="../index.html" >Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="servses.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="sign-in-btn">Sign In</a></li>
+            </ul>
+        
+    </nav>
+
+    <!-- Create Event Form -->
+    <section class="create-event-section">
+        <div class="create-event-container">
+            <h1>Create New Event</h1>
+            <form class="create-event-form">
+                <!-- Basic Information -->
+                <div class="form-section">
+                    <h2>Basic Information</h2>
+                    <div class="form-group">
+                        <label for="event-title">Event Title*</label>
+                        <input type="text" id="event-title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-category">Category*</label>
+                        <select id="event-category" required>
+                            <option value="">Select Category</option>
+                            <option value="tech">Technology</option>
+                            <option value="business">Business</option>
+                            <option value="arts">Arts & Culture</option>
+                            <option value="sports">Sports</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="event-date">Date*</label>
+                            <input type="date" id="event-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="event-time">Time*</label>
+                            <input type="time" id="event-time" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Location -->
+                <div class="form-section">
+                    <h2>Location</h2>
+                    <div class="form-group">
+                        <label for="venue-name">Venue Name*</label>
+                        <input type="text" id="venue-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="venue-address">Address*</label>
+                        <input type="text" id="venue-address" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="city">City*</label>
+                            <input type="text" id="city" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country*</label>
+                            <input type="text" id="country" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Details -->
+                <div class="form-section">
+                    <h2>Event Details</h2>
+                    <div class="form-group">
+                        <label for="description">Description*</label>
+                        <textarea id="description" rows="4" required></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="capacity">Capacity*</label>
+                            <input type="number" id="capacity" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="price">Ticket Price*</label>
+                            <input type="number" id="price" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image Upload -->
+                <div class="form-section">
+                    <h2>Event Image</h2>
+                    <div class="form-group">
+                        <label for="event-image">Upload Image*</label>
+                        <div class="image-upload-container">
+                            <input type="file" id="event-image" accept="image/*" required>
+                            <div class="upload-placeholder">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <p>Drag and drop or click to upload</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Submit Buttons -->
+                <div class="form-buttons">
+                    <button type="button" class="cancel-btn">Cancel</button>
+                    <button type="submit" class="submit-btn">Create Event</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+        <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">
+                    <div class="logo-icon"></div>
+                    <span>Eventera</span>
+                </div>
+                <p>Discover and join amazing events happening around you.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Eventera. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="../js/index.js"></script>
+</body>
+</html>

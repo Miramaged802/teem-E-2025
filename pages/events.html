@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Eventera</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+      <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/events.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="../img/logo.jpeg" alt="">
+                </div>
+                <span>Eventera</span>
+            </div>
+            <div class="bx bx-menu" id="menu-icons"></div>
+            <ul class="nav-links">
+                <li><a href="../index.html" class="active">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="servses.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="signin.html" class="sign-in-btn">Sign In</a></li>
+            </ul>
+       
+    </nav>
+    <!-- Hero Section -->
+    <section class="events-hero">
+        <div class="events-hero-content">
+            <h1>Discover Events</h1>
+            <p>Find and join amazing events happening around you</p>
+            <a href="create-event.html" class="create-event-btn">
+                <i class="fas fa-plus"></i> Create New Event
+            </a>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="search-filter">
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search events...">
+        </div>
+        <div class="filters">
+            <select>
+                <option value="">All Categories</option>
+                <option value="tech">Technology</option>
+                <option value="business">Business</option>
+                <option value="arts">Arts & Culture</option>
+                <option value="sports">Sports</option>
+            </select>
+            <select>
+                <option value="">All Locations</option>
+                <option value="cairo">Cairo</option>
+                <option value="alex">Alexandria</option>
+                <option value="giza">Giza</option>
+            </select>
+            <select>
+                <option value="">Date Range</option>
+                <option value="today">Today</option>
+                <option value="week">This Week</option>
+                <option value="month">This Month</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- Events Grid -->
+    <section class="events-grid">
+        <!-- Event Card 1 -->
+        <div class="event-card">
+            <div class="event-image">
+                <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Tech Summit">
+                <div class="event-date">
+                    <span class="day">15</span>
+                    <span class="month">APR</span>
+                </div>
+                <div class="event-category">Technology</div>
+            </div>
+            <div class="event-details">
+                <h3>Tech Summit 2024</h3>
+                <div class="event-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Cairo International Convention Center</p>
+                    <p><i class="fas fa-clock"></i> 9:00 AM - 5:00 PM</p>
+                    <p><i class="fas fa-users"></i> 500+ Attendees</p>
+                </div>
+                <p class="event-description">Join the biggest tech conference of the year featuring industry leaders and innovators.</p>
+                <div class="event-footer">
+                    <span class="price">$299</span>
+                    <button class="register-btn">Register Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event Card 2 -->
+        <div class="event-card">
+            <div class="event-image">
+                <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" alt="Design Conference">
+                <div class="event-date">
+                    <span class="day">20</span>
+                    <span class="month">MAY</span>
+                </div>
+                <div class="event-category">Design</div>
+            </div>
+            <div class="event-details">
+                <h3>Design Conference</h3>
+                <div class="event-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Alexandria Arts Center</p>
+                    <p><i class="fas fa-clock"></i> 10:00 AM - 4:00 PM</p>
+                    <p><i class="fas fa-users"></i> 300+ Attendees</p>
+                </div>
+                <p class="event-description">Explore the latest trends in design with world-renowned designers and creative professionals.</p>
+                <div class="event-footer">
+                    <span class="price">$199</span>
+                    <button class="register-btn">Register Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event Card 3 -->
+        <div class="event-card">
+            <div class="event-image">
+                <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Startup Weekend">
+                <div class="event-date">
+                    <span class="day">10</span>
+                    <span class="month">JUN</span>
+                </div>
+                <div class="event-category">Business</div>
+            </div>
+            <div class="event-details">
+                <h3>Startup Weekend</h3>
+                <div class="event-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Giza Innovation Hub</p>
+                    <p><i class="fas fa-clock"></i> 9:00 AM - 6:00 PM</p>
+                    <p><i class="fas fa-users"></i> 200+ Attendees</p>
+                </div>
+                <p class="event-description">Turn your idea into reality in 54 hours with mentors, investors, and fellow entrepreneurs.</p>
+                <div class="event-footer">
+                    <span class="price">$149</span>
+                    <button class="register-btn">Register Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Load More Button -->
+    <div class="load-more">
+        <button>Load More Events</button>
+    </div>
+
+    <!-- Footer -->
+        <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">
+                    <div class="logo-icon"></div>
+                    <span>Eventera</span>
+                </div>
+                <p>Discover and join amazing events happening around you.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Eventera. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="../js/index.js"></script>
+</body>
+</html>
